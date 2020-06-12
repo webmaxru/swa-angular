@@ -1,8 +1,13 @@
 <p>Profile works!</p>
 
+<p>Use /.auth/me to get user info</p>
+
 <ul>
   <li>
-    <a href="./auth/me">Who am I?</a>
+    <p>
+        <button onclick="callApi('/.auth/me')">Who am I?</button><br>
+        <pre id="name"></pre>
+      </p>
   </li>
   <li>
     <a href="/">Go back</a>

@@ -13,6 +13,7 @@
     <script>
       async function callApi(url) {
         let { content } = await (await fetch(url)).json();
+        console.log(content)
         document.querySelector("#name").innerHTML = content;
       }
     </script>

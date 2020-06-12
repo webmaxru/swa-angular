@@ -9,5 +9,12 @@
 </head>
 <body>
   <app-root></app-root>
+
+  <script>
+    async function callApi() {
+      let { text } = await (await fetch(`/api/Greet`)).json();
+      document.querySelector("#name").textContent = text;
+    }
+  </script>
 </body>
 </html>

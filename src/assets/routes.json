@@ -2,11 +2,15 @@
   "routes": [
     {
       "route": "/profile",
-      "allowedRoles": ["authenticated"]
+      "allowedRoles": ["authenticated"],
+      "serve": "/index.html",
+      "statusCode": 200
     },
     {
-      "route": "/admin/*",
-      "allowedRoles": ["administrator"]
+      "route": "/admin",
+      "allowedRoles": ["administrator"],
+      "serve": "/index.html",
+      "statusCode": 200
     },
     {
       "route": "/login",

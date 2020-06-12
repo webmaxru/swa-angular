@@ -11,10 +11,16 @@
     <app-root></app-root>
 
     <script>
-      async function callApi(url) {
-        let { content } = await (await fetch(url)).json();
-        console.log(content)
-        document.querySelector("#name").innerHTML = content;
+      function callApi(url) {
+        fetch(url)
+          .then((response) => {
+            response.json().then((content) => {
+              document.querySelector("#name").innerHTML = content;
+            });
+          })
+          .catch((err) => {
+            console.log("Fetch Error :-S", err);
+          });
       }
     </script>
   </body>

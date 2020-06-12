@@ -40,6 +40,10 @@
     max-width: 960px;
     flex-direction: column;
   }
+
+  li {
+    margin-bottom: 10px;
+  }
 </style>
 
 <!-- Toolbar -->
@@ -48,117 +52,5 @@
 </div>
 
 <div class="content" role="main">
-  <h2>Demo</h2>
-
-  <ol>
-    <li>
-      <h3>Build and deploy</h3>
-
-      <ul>
-        <li></li>
-        <li>
-          <a
-            href="https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2FStaticSites"
-            >SWA in Azure portal</a
-          >
-        </li>
-        <li>
-          <a href="Sample configuration for the frontend frameworks"
-            >https://docs.microsoft.com/en-us/azure/static-web-apps/front-end-frameworks</a
-          >
-        </li>
-      </ul>
-    </li>
-    <li>
-      <h3>Creating API</h3>
-
-      <button onclick="callApi()">Demo</button> Hello, <span id="name"></span>
-
-      <ul>
-        <li>
-          <a
-            href="https://docs.microsoft.com/en-us/azure/static-web-apps/add-api"
-            >Quickstarts</a
-          >
-        </li>
-        <li>
-          <a
-            href="/api/Greet?name=NDC"
-            >Test</a
-          >
-        </li>
-      </ul>
-    </li>
-    <li>
-      <h3>Authentication</h3>
-
-      <p>Use /.auth/ helpers</p>
-
-      <ul>
-        <li>
-          <a
-            href="./auth/login/github"
-            >Log in</a
-          >
-        </li>
-        <li>
-          <a
-            href="./auth/me"
-            >Check status</a
-          >
-        </li>
-        <li>
-          <a
-            href="./auth/logout"
-            >Log out</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://docs.microsoft.com/en-us/azure/static-web-apps/add-api"
-            >Quickstarts</a
-          >
-        </li>
-      </ul>
-    </li>
-  </ol>
-
-  <h2>Useful links</h2>
-  <p>Here are some links to help you get started:</p>
-
-  <ul>
-    <li>
-      <a href="https://aka.ms/swadocs"
-        ><strong>Documentation | aka.ms/swadocs</strong></a
-      >
-    </li>
-    <li>
-      <a href="https://burkeholland.github.io/posts/static-app-root-domain/"
-        >Setting up a root domain (using CloudFlare)</a
-      >
-    </li>
-    <li>
-      <a href="Static Web Apps on Azure - landing page"
-        >https://azure.microsoft.com/en-us/services/app-service/static/</a
-      >
-    </li>
-    <li>
-      <a href="VS Code Extension"
-        >https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps</a
-      >
-    </li>
-    <li>
-      <a href="Quickstarts - Angular"
-        >https://docs.microsoft.com/en-us/azure/static-web-apps/getting-started?tabs=angular</a
-      >
-    </li>
-    <li>
-      <a href="dddd">ffffff</a>
-    </li>
-    <li>
-      <a href="dddd">ffffff</a>
-    </li>
-  </ul>
+  <router-outlet></router-outlet>
 </div>
-
-<router-outlet></router-outlet>

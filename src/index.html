@@ -12,7 +12,7 @@
 
   <script>
     async function callApi() {
-      let { text } = await (await fetch(`/api/Greet`)).json();
+      let { text } = await fetch(`/api/Greet`);
       document.querySelector("#name").textContent = text;
     }
   </script>

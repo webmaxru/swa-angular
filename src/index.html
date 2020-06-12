@@ -15,7 +15,7 @@
         fetch(url)
           .then((response) => {
             response.json().then((content) => {
-              document.querySelector("#name").innerHTML = content;
+              document.querySelector("#name").innerHTML = JSON.stringify(content, null, '\t');
             });
           })
           .catch((err) => {

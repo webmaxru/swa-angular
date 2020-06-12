@@ -12,8 +12,8 @@
 
     <script>
       async function callApi(url) {
-        let { content } = await (await fetch(url)).json();
-        document.querySelector("#name").textContent = JSON.stringify(content);
+        let { content } = await (await fetch(url)).text();
+        document.querySelector("#name").innerHTML = content;
       }
     </script>
   </body>

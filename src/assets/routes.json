@@ -17,7 +17,7 @@
       "serve": "/.auth/login/github"
     },
     {
-      "route": "/.auth/login/twitter",
+      "route": "/.auth/login/facebook",
       "statusCode": "404"
     },
     {
